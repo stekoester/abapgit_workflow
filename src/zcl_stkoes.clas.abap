@@ -1,14 +1,19 @@
-class ZCL_STKOES definition
-  public
-  final
-  create public .
+CLASS zcl_stkoes DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_STKOES IMPLEMENTATION.
+CLASS zcl_stkoes IMPLEMENTATION.
+  METHOD if_oo_adt_classrun~main.
+    out->WRITE( 'Test' ).
+  ENDMETHOD.
+
 ENDCLASS.
